@@ -1,0 +1,9 @@
+| Event ID | Event / Condition         | Description                                                   |
+| -------- | ------------------------- | ------------------------------------------------------------- |
+| E1       | Delivery Request Received | A valid request instructs the robot to deliver a package.     |
+| E2       | Destination Reached       | The robot reaches the requested delivery location.            |
+| E3       | Obstacle Detected         | The robot detects an obstacle blocking or affecting its path. |
+| E4       | Obstacle Avoided          | The robot successfully avoids the detected obstacle.          |
+| E5       | Delivery Successful       | The package has been successfully delivered.                  |
+| E6       | Critical Battery          | Battery level falls below the defined critical threshold.     |
+| E7       | Warehouse Reached         | The robot reaches the warehouse while returning.              |
