@@ -1,0 +1,7 @@
+| State ID | State Name        | Description                                                               | Entry Condition                                      | Exit Condition                                           |
+| -------- | ----------------- | ------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
+| S1       | IDLE              | Robot is stationary and waiting for a delivery request.                   | Robot is powered on or reaches warehouse.            | Delivery Request Received                                |
+| S2       | NAVIGATING        | Robot moves toward the specified destination.                             | Valid delivery request received or obstacle avoided. | Destination Reached, Obstacle Detected, Critical Battery |
+| S3       | AVOIDING_OBSTACLE | Robot temporarily stops normal navigation and avoids a detected obstacle. | Obstacle detected during navigation.                 | Obstacle Avoided                                         |
+| S4       | DELIVERING        | Robot performs the package delivery at the destination.                   | Destination reached.                                 | Delivery Successful                                      |
+| S5       | RETURNING         | Robot travels back toward the warehouse.                                  | Delivery successful or critical battery.             | Warehouse Reached                                        |
